@@ -1,0 +1,79 @@
+/*configuracion basica inicial de los estilos*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+.container {
+    width: 40rem;
+    height: 40rem;
+    margin: 13rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top right, rgb(1, 1, 82) 20%, rgb(0, 242, 255));
+    color: white;
+    border-radius: 0.5rem;
+}
+.container__div--number {
+    width: 28rem;
+    position: relative;
+    margin-left: 2.5rem;
+}
+.container__div--number__first-one {
+    width: 1.6rem;
+    height: 3.3rem;
+    background-color: white;
+    position: absolute;
+    top: 3.1rem;
+    left: 5rem;
+    border-radius: 0.3rem;
+    transform: rotate(50deg);
+}
+.container__div--number__second-one {
+    width: 1.6rem;
+    height: 7rem;
+    background-color: white;
+    position: absolute;
+    left: 6.2rem;
+    top: 3.2rem;
+    border-radius: 0.3rem;
+    box-shadow: #33333384 0px 8px 16px;
+    z-index: 3;
+}
+.container__div--number__first-zero,
+.container__div--number__second-zero {
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    top:3.2rem;
+    left: 7.3rem ;
+    border-radius: 50%;
+    border: 18px solid #fff;
+    z-index: 2;
+    box-shadow: #33333384 0px 8px 16px;
+}
+.container__div--number__second-zero {
+    left: 13rem;
+    z-index: 1;
+}
+.container__h1 {
+    font-size: 6rem;
+    margin-top: 9rem;
+}
+.container__p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
